@@ -1,5 +1,5 @@
 /*-----------------------------------------------
-  TÍTULO: Funciones en JavaScript
+ Funciones en JavaScript
  --------------------------------------------*/
 alert("===== Funciones en JavaScript =====");
 
@@ -35,7 +35,7 @@ const saludarPersonalizado = crearSaludo("Hola");
 alert(saludarPersonalizado("yepes")); 
 
 /*---------------------------------------------
- * TÍTULO: Arreglos en JavaScript
+ Arreglos en JavaScript
 ----------------------------------------------*/
 alert("===== Arreglos en JavaScript =====");
 
@@ -77,9 +77,9 @@ alert(`Números pares: ${pares.join(", ")}`); // Muestra: 2
 const suma = numeros.reduce((acc, num) => acc + num, 0);
 alert(`Suma de los números: ${suma}`); // muestra 6
 
-/**********************************************
- * TÍTULO: Programación Orientada a Objetos (POO)
- **********************************************/
+/*---------------------------------------------
+ Programación Orientada a Objetos (POO)
+ ---------------------------------------------*/
 alert("===== Programación Orientada a Objetos (POO) =====");
 
 // 1. Definición de una clase
@@ -106,47 +106,30 @@ class Perro extends Animal {
 const miPerro = new Perro("Rex");
 miPerro.hacerSonido(); // Muestra: Rex hace Guau
 
-/**********************************************
-  TÍTULO: Manejo de Eventos y el DOM
- **********************************************/
-alert("===== Manejo de Eventos y el DOM =====");
+/*--------------------------------------------
+Manejo de Eventos y el DOM
+ ---------------------------------------------*/
+ alert("===== Manejo de Eventos y el DOM =====");
 
-// 1. Selección de un elemento del DOM
-const contenedor = document.querySelector("#contenedor");
+ // 1. Selección de un elemento del DOM
+ const contenedor = document.querySelector("#contenedor");
 
-// 2. Cambiar contenido del DOM automáticamente
-contenedor.innerHTML = "<p>Nuevo contenido añadido automáticamente</p>";
-alert("El contenido del DOM ha sido modificado");
+ // 2. Cambiar contenido del DOM automáticamente
+ contenedor.innerHTML = "<p>Nuevo contenido añadido automáticamente</p>";
+ alert("El contenido del DOM ha sido modificado");
 
-/**********************************************
- TÍTULO: Módulos en JavaScript
- **********************************************/
-alert("===== Módulos en JavaScript =====");
+ alert("===== Programación Asíncrona =====");
 
-// 1. Exportación de una función (archivo: funciones.js)
-// export function saludar(nombre) {
-//     return `Hola, ${yepes}!`;
-// }
+ // 1. Promesas
+ const esperar = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+ esperar(2000).then(() => {
+     alert("Han pasado 2 segundos");
+ });
 
-// 2. Importación de la función (archivo: main.js)
-// import { saludar } from './funciones.js';
-// alert(saludar("Yepes")); 
-
-/**********************************************
- TÍTULO: Programación Asíncrona
- **********************************************/
-alert("===== Programación Asíncrona =====");
-
-// 1. Promesas
-const esperar = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-esperar(2000).then(() => {
-    alert("Han pasado 2 segundos");
-});
-
-// 2. Async/Await
-async function ejecutar() {
-    alert("Iniciando...");
-    await esperar(3000);
-    alert("Finalizado después de 3 segundos");
-}
-ejecutar();
+ // 2. Async/Await
+ async function ejecutar() {
+     alert("Iniciando...");
+     await esperar(3000);
+     alert("Finalizado después de 3 segundos");
+ }
+ ejecutar();
