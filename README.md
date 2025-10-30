@@ -7,12 +7,12 @@ Proyecto práctico que reúne conceptos fundamentales y avanzados de JavaScript,
 - Manipulación del DOM
 - Programación asíncrona (Promesas y Async/Await)
 
-# ´¿Cómo ejecutarlo?
+## ´¿Cómo ejecutarlo?
 1. Descarga o clona el repositorio.  
 2. Abre el archivo `index.html` en tu navegador.  
 3. Observa los mensajes y resultados directamente en las **alertas** y la consola del navegador.
 
-# Tecnologías utilizadas
+## Tecnologías utilizadas
 - HTML5  
 - JavaScript (ES6+)
 
